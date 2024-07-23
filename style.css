@@ -24,8 +24,8 @@ body{
 #container{
     position:absolute;
 }
-#container input{
+/* #container input{
     position:relative;
     overflow: hidden;
 
-}
+} */
