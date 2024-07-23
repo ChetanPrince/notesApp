@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#main-div, #container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px;
+}
+#main-div{
+
+    background-color: aqua;
+    width: 50vw;
+
+    top: -50%;
+    left: -50%;
+    transform: translate(50%, 50%);
+}
+#container{
+    position:absolute;
+}
+#container input{
+    position:relative;
+    overflow: hidden;
+
+}
