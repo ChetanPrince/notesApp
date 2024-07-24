@@ -10,10 +10,19 @@
 <body>
     <div id="main-div">
         <button id="addNote">+ Add Note</button>
-        <div id="container">
+        <div id="container" class="container hide">
             <h2>New Note</h2>
-            <input type="text" name="title" id="title" placeholder="Write A Title">
-            <input type="text" name="brief-note" id="briefNote" placeholder="write down details">
+            <input type="text" class="data" name="title" id="title" placeholder="Write A Title">
+           <textarea name="text" id="textarea" class="data"></textarea>
+           <button id="submit">Submit</button>
+        </div>
+        <div id="dataContainer">
+            <table id="table"><tbody id="tbody">
+                <tr class="row">
+                    <th>title</th>
+                    <th>Note</th>
+                </tr>
+            </tbody></table>
         </div>
     </div>
     <script src="script.js"></script>
