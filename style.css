@@ -22,12 +22,24 @@ body {
     padding: 5px;
     gap: 10px;
     margin-left: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.23);
     
 }
 img{
     width: 25px;
     height: 25px;
-    filter: brightness(100%);    
+    transform: translateY(-100px);
+    cursor: pointer;
+}
+
+.saveImg{
+    filter: drop-shadow(0px 100px 0 rgba(0, 255, 55, 0.784));
+   
+}
+.deleteImg{
+    filter: drop-shadow(0px 100px 0 rgba(255, 0, 0, 0.61));
+
 }
 .container {
     width: 30%;
@@ -62,7 +74,7 @@ button{
     position: fixed;
 }
 
-button:hover {
+button:hover, img:hover {
     background-color: rgb(142, 194, 21);
 }
 
