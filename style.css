@@ -5,32 +5,44 @@
     box-sizing: border-box;
 }
 
-/* Body styles */
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f0f0f0;
+    background-color: #cfcaca;
+    display: flex; 
+    flex-direction: row;
+    gap: 22.5px;
+    flex-wrap: wrap;
 }
-
-#main-div {
-    background-color: aqua;
-    max-width: 85%;
-    padding:    0% 5%;
-    border-radius: 5px;
-    margin-bottom: 10%;
+.upperBar{
+    /* background-color: black; */
+    height: 35px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    border: 2px solid black;
+    flex-direction: row;
+    align-items:flex-start;
+    padding: 5px;
+    gap: 10px;
+    margin-left: 10px;
+    
+}
+img{
+    width: 25px;
+    height: 25px;
+    filter: brightness(100%);    
 }
 .container {
-    gap: 20px;
-    margin-top: 10%;
+    width: 30%;
+    margin-top: 20%;
+    margin-left: 10px;
     text-align: center;
-    min-width: 150px;
+    min-width: 130px;
+    border: 1px solid rgba(0, 0, 0, 0.77);
+    border-radius: 7px;
+    box-shadow: 3px 3px 10px rgb(69, 59, 59);
+    background-color: rgba(12, 64, 255, 0.296);
+}
+::placeholder{
+    color: rgb(0, 0, 0);
+    opacity: 1;
 }
 
 button{
@@ -46,7 +58,8 @@ button{
     cursor: pointer;
 }
 #addNote {
-    margin: 5%;
+    margin: 2%;
+    position: fixed;
 }
 
 button:hover {
@@ -55,23 +68,25 @@ button:hover {
 
 button:active {
     transform: translate(2px, 2px);
-    width: 140px;
+    width: 160px;
     height: 55px;
     box-shadow: none;
 }
 
-/* Container styles */
-
 .data {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid rgb(42, 73, 165);
+    background-color: rgb(42, 112, 165);
     font-size: 1em;
+    color: rgb(255, 255, 255);
 }
 
 textarea.data {
-    height: 100px;
+    height: 200px;
+    background-color: rgb(203, 218, 229);
+    color: black;
+    resize: none;
 }
 
 /* Responsive design */
@@ -80,41 +95,15 @@ textarea.data {
         font-size: 20px;
     }
 
-    #main-div {
-        width: 90%;
-        padding: 20px;
-    }
-
     button {
         width: 50%;
         height: 50px;
         font-size: 70%;
     }
 
-    .data {
-        width: 100%;
-        min-height: 30px;
-    }
 }
 
-/* Hide class definition */
 .hide {
     display: none;
 }
 
-#dataContainer{
-    margin-top:10%;
-    width: 100%;
-}
-td{
-    margin: 10px;
-}
-
-.table-data, th{
-    border: 1px solid black;
-   padding: 10px;
-   text-align: center;
-}
-.table-data button{
-    width: 70px;
-}

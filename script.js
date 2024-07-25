@@ -5,12 +5,12 @@ document.getElementById("addNote").addEventListener("click", ()=>{
     heading2.textContent ="Write Note";
     div.appendChild(heading2);
     div.classList.add("container");
-    div.innerHTML = `<input type="text" class="data" name="title" id="title" placeholder="Write A Title">
-    <textarea name="text" id="textarea" class="data"></textarea>`;
-    if(!mainDiv.contains("div")){
-        mainDiv.appendChild(div);
-    }
-    
+    div.innerHTML = `<div class="upperBar"><img src="icons8-save-50.png" alt="saveNote"><img src="icons8-delete-24.png" alt="deleteNote"></div> 
+    <input type="text" class="data" name="title" id="title" placeholder="Write A Title">
+    <textarea name="text" id="textarea" class="data" placeholder="Thoughts"></textarea>`;
+    document.body.appendChild(div);
+   
+
 })
 
 
